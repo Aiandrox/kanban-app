@@ -37,7 +37,7 @@ export default {
 
   computed: {
     task () {
-      const id = parseInt(this.$route.params.id)
+      const id = parseInt(this.$route.params.id) //urlからとってきている
       return !Number.isNaN(id)
         ? {...this.$store.getters.getTaskById(id)}
         : {}

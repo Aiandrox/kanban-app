@@ -18,9 +18,10 @@ Vue.config.errorHandler = (err, vm, info) => {
 }
 
 /* eslint-disable no-new */
+/* 特定の部分だけ指定してvueを使えるのがよい */
 new Vue({
   el: '#app',
   router,
   store, // インポートしたストアインスタンスを`store`オプションとして指定
-  render: h => h(App)
+  render: h => h(App) // App.vue
 })

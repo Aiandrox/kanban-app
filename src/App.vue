@@ -1,6 +1,6 @@
 <template>
   <ErrorBoundary id="app">
-    <router-view/>
+    <router-view/> <!-- vue routerには絶対必要 -->
   </ErrorBoundary>
 </template>
 

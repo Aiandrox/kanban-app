@@ -52,7 +52,7 @@ export default {
   },
 
   props: {
-    task: {
+    task: { //オブジェクトとして（展開せず）渡している
       type: Object,
       required: true,
       default: () => {}

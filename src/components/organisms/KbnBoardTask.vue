@@ -4,7 +4,7 @@
       v-for="list in lists"
       :key="list.id"
     >
-      <KbnTaskList v-bind="list" />
+      <KbnTaskList v-bind="list" /><!-- listの中身を展開してそれぞれ渡す→id,nameなどそれぞれ…… -->
     </li>
   </ul>
 </template>

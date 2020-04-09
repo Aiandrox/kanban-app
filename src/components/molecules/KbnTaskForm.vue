@@ -77,7 +77,7 @@ export default {
       this.progress = true
       this.error = ''
 
-      const { name, listId } = this
+      const { name, listId } = this // {name: this.name, listId: this.listId }と同じっぽい
       return this.$store.dispatch('addTask', { name, listId })
         .then(() => {
           this.$emit('close')

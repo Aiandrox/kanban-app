@@ -33,11 +33,12 @@ export default {
     }
   },
 
-  computed: mapState({
+  computed: mapState({ // stateをマッピング？みたいな。mapStateで省略できるらしい
     lists: state => state.board.lists
   }),
 
   created () {
+    // ページが描画されたときに呼ばれるメソッド
     this.loadLists()
   },
 
@@ -53,7 +54,7 @@ export default {
     },
 
     loadLists () {
-      this.setProgress('読み込み中...')
+      this.setProgress('読み込み中...') // vueのメリットのひとつ。
       this.$store.dispatch('fetchLists')
         .catch(err => Promise.reject(err))
         .then(() => {

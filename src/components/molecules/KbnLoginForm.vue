@@ -71,6 +71,7 @@ export default {
     }
   },
 
+// v-modelで定義されている
   data () {
     return {
       email: '',
